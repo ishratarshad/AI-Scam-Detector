@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Scam Detector</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <h1 class="text-center">AI Scam Detector</h1>
+        <p class="text-center">Enter text to analyze if it's a scam.</p>
+        <form action="/predict" method="POST">
+            <div class="mb-3">
+                <label for="user_input" class="form-label">Text to Analyze:</label>
+                <textarea class="form-control" id="user_input" name="user_input" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Analyze</button>
+        </form>
+
+        <!-- Display the result -->
+        {% if result %}
+        <div class="alert alert-info mt-3" role="alert">
+            <strong>Result:</strong> {{ result }}
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
