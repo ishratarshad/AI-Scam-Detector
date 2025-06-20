@@ -9,10 +9,6 @@ A web-based application that uses AI to help users detect whether an email messa
 - User-friendly interface for easy interaction.
 - Deployed on Render for public accessibility.
 
-## Live Demo
-
-Access the AI Scam Detector here: [https://ai-scam-detector.onrender.com](https://ai-scam-detector.onrender.com)
-
 ## How It Works
 
 1. Users input the text of an email into the application.
