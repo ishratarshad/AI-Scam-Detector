@@ -2,7 +2,7 @@
 
 A web-based application that uses AI to help users detect whether an email message is a scam or legitimate. This project was built using Flask for the backend and Render for deployment.
 
-## Features
+## Features:
 
 - Accepts email text as input and analyzes its content.
 - Provides a real-time response indicating if the email is a scam or legitimate.
